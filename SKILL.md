@@ -7,7 +7,9 @@ metadata:
 
 # Video Editing Workflow
 
-Use this skill when a video task needs more than a one-off trim: multiple source videos, a storyboard, synchronized viewpoints, narration/BGM mixing, repeatable rendering, or delivery validation.
+Use this package when a video task needs more than a one-off trim: multiple source videos, a storyboard, synchronized viewpoints, narration/BGM mixing, repeatable rendering, or delivery validation.
+
+`WORKFLOW.md` is the canonical vendor-neutral version. Agents with skill discovery may load this file; agents without it should read `WORKFLOW.md` and the relevant references directly. The YAML frontmatter is optional metadata, not a runtime dependency.
 
 The goal is a reproducible project, not merely a visually plausible export. Keep project facts in the project brief/storyboard; keep this skill limited to decisions that generalize across projects.
 
