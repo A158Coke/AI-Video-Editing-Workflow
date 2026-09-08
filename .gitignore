@@ -1,0 +1,25 @@
+# This repository contains reusable workflow and skill documentation only.
+# Keep project media and generated outputs in local project repositories.
+
+*.mp4
+*.mov
+*.mkv
+*.avi
+*.webm
+*.m4a
+*.mp3
+*.wav
+*.flac
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
+work/
+sources/
+assets/
+deliverables/
+previews/
+__pycache__/
+.pytest_cache/
+.venv/
