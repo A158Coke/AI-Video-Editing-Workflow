@@ -10,6 +10,7 @@ The workflow is designed to be agent-neutral. It can be consumed as ordinary Mar
 
 - [`WORKFLOW.md`](WORKFLOW.md) — canonical vendor-neutral workflow
 - [`SKILL.md`](SKILL.md) — optional skill-loader entrypoint; also readable as Markdown
+- [`skills/`](skills/README.md) — per-case policy sets (product update, promos, highlight montage) and the BGM selection skill
 - [`AGENTS.md`](AGENTS.md) — generic agent adapter
 - [`CLAUDE.md`](CLAUDE.md) — Claude Code adapter
 - [`references/shared-timeline.md`](references/shared-timeline.md) — multi-source event-time alignment
@@ -26,6 +27,8 @@ The workflow is designed to be agent-neutral. It can be consumed as ordinary Mar
 ## Design principle
 
 Project facts belong to the project brief and storyboard. The skill contains only reusable decisions and validation rules. A match edit may choose an official-feed opening/ending policy; a product promo or chart animation may choose a different policy and record it explicitly.
+
+Those per-genre policy sets live in [`skills/`](skills/README.md): one workflow, one case skill per genre of video, one brief per video. A case skill supplies the default answers to the decisions `WORKFLOW.md` requires; the project brief records the final ones and every override.
 
 ## Validation
 

@@ -6,6 +6,7 @@ The repository is intentionally plain-text and tool-neutral.
 
 - `WORKFLOW.md` is the canonical vendor-neutral workflow.
 - `references/` contains conditional guidance; load only what the current task needs.
+- `skills/` contains per-case policy sets. They answer the questions the workflow delegates and must not restate or override its steps and gates.
 - `SKILL.md` is an optional skill-loader entrypoint. Agents without skill discovery should read its Markdown body or use `WORKFLOW.md` directly.
 - `AGENTS.md` and `CLAUDE.md` are lightweight adapters for agents that automatically load those filenames. They must point back to the canonical workflow rather than fork its rules.
 

@@ -14,6 +14,11 @@ Before editing, identify the project root, available files, media tools, and out
 
 Keep project facts in the project brief and storyboard. Do not put team names, event timecodes, absolute machine paths, account names, or one project's visual rules into this shared workflow.
 
+Where a reusable policy set exists for this genre of video, load the matching case skill from
+`skills/` and record which one was used, together with any override, in the brief. A case skill
+supplies default answers to the decisions this file requires; it never changes the steps or the
+gates below.
+
 ## 2. Isolate files
 
 Use separate locations for immutable sources, approved assets, scripts, generated work, previews, and deliverables. Keep large/private media local or track only a manifest with relative paths, durations, technical metadata, and optional checksums.

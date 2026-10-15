@@ -23,6 +23,20 @@ The goal is a reproducible project, not merely a visually plausible export. Keep
 6. Make editorial boundaries explicit. Do not let ads, sponsor beds, studio commentary, interviews, post-event talk, or unrelated transitions enter a section merely because they are adjacent in the source.
 7. Render in stages and validate each stage. Never trust an old output just because its filename says “final”; use versioned outputs or a temporary file followed by an atomic replacement.
 
+## Choose a case skill
+
+`WORKFLOW.md` decides which questions must be answered. A case skill in
+[`skills/`](skills/README.md) supplies the default answers for one genre of video:
+
+- Product update: [skills/product-update/SKILL.md](skills/product-update/SKILL.md)
+- Product promo: [skills/product-promo/SKILL.md](skills/product-promo/SKILL.md)
+- Team promo: [skills/team-promo/SKILL.md](skills/team-promo/SKILL.md)
+- Highlight montage: [skills/highlight-montage/SKILL.md](skills/highlight-montage/SKILL.md)
+- BGM selection, layered on any case: [skills/bgm-selection/SKILL.md](skills/bgm-selection/SKILL.md)
+
+Load exactly one case skill, plus any cross-cutting skill the brief requires. A case skill
+never overrides the operating rules or the minimum completion gate in this file.
+
 ## Choose the relevant reference
 
 - General project layout and manifests: [references/project-layout.md](references/project-layout.md)
