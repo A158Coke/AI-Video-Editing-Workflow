@@ -23,12 +23,19 @@ The workflow is designed to be agent-neutral. It can be consumed as ordinary Mar
 - [`references/material-capture.md`](references/material-capture.md) — web/application material capture
 - [`references/radar-chart.md`](references/radar-chart.md) — reusable chart guidance
 - [`references/agent-interop.md`](references/agent-interop.md) — portability and adapter contract
+- [`references/motion-prompt.md`](references/motion-prompt.md) — optional Motion Prompt reference catalog integration
 
 ## Design principle
 
 Project facts belong to the project brief and storyboard. The skill contains only reusable decisions and validation rules. A match edit may choose an official-feed opening/ending policy; a product promo or chart animation may choose a different policy and record it explicitly.
 
 Those per-genre policy sets live in [`skills/`](skills/README.md): one workflow, one case skill per genre of video, one brief per video. A case skill supplies the default answers to the decisions `WORKFLOW.md` requires; the project brief records the final ones and every override.
+
+## Motion references (optional)
+
+For title moves, camera moves, transitions, or visual treatments, this workflow can use the external [Motion Prompt catalog](https://github.com/showheyohtaki/motion-prompt) as a reference. Browse the [moving gallery](https://showheyohtaki.github.io/motion-prompt/) and give the editor a selected element number or paste the gallery's "Copy picks" text, for example: "Use Motion Prompt #005 for the opening title, preserving the existing scene length."
+
+Load [the motion references cross-cutting skill](skills/motion-references/SKILL.md) only for scenes that need it. The [integration guide](references/motion-prompt.md) explains optional upstream Skill installation, source attribution, how to adapt to the existing renderer, and how to validate an effect. This adds **no mandatory runtime, copied animation library, or second storyboard**; the project's existing shot manifest remains authoritative.
 
 ## Validation
 
