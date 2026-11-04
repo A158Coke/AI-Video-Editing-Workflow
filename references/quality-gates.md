@@ -25,6 +25,8 @@ Extract frames at:
 
 For multi-camera work, label each checked frame with both output time and source/event time. This makes a timing error diagnosable instead of subjective.
 
+For scenes referencing Motion Prompt, also inspect frames at the effect's entrance, mid-motion, hold, and exit (or first/last loop frames), including transitions into and out of adjacent scenes. Check source-spec timing/easing, aspect-ratio crops, replacement text and font fit, and any departure from the reference. Mark unrendered or visually unverified effects explicitly; source code inspection alone is not a render check.
+
 At minimum, inspect the export in the target player for:
 
 - stale or duplicated content;
