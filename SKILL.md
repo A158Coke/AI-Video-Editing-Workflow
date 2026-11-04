@@ -48,6 +48,7 @@ never overrides the operating rules or the minimum completion gate in this file.
 - Boundary and delivery QA: [references/quality-gates.md](references/quality-gates.md)
 - Web or application material capture: [references/material-capture.md](references/material-capture.md)
 - Radar or multi-dimensional chart visuals: [references/radar-chart.md](references/radar-chart.md)
+- Optional motion and camera effect references: [references/motion-prompt.md](references/motion-prompt.md) (use with [motion-references cross-cutting skill](skills/motion-references/SKILL.md) only when requested)
 
 ## Minimum completion gate
 
