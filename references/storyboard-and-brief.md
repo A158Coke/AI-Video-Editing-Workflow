@@ -10,6 +10,8 @@ Write the brief before choosing shots. Capture:
 
 The storyboard should be executable. Each row should identify the source and time range, target duration, visual purpose, text, audio, transition, and review status. Use stable shot IDs and keep the file in UTF-8.
 
+If a scene uses a Motion Prompt effect, record the element ID (for example `motion-prompt:#005`), its role in the scene, source revision, and any timing or content adaptations in that row's `treatment`/`notes`. The existing storyboard remains the only source of truth; see [motion-prompt.md](motion-prompt.md).
+
 For a general promo, a useful starting arc is:
 
 ```text
