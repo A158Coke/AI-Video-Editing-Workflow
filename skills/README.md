@@ -43,6 +43,7 @@ to pass, and record the choice in the brief. Do not merge two cases into one edi
 | Skill | Applies to | Purpose |
 |---|---|---|
 | BGM selection | Any case | Choosing the track: energy curve, tempo against cut rhythm, vocal policy, licence class, where the drop lands | [`bgm-selection/SKILL.md`](bgm-selection/SKILL.md) |
+| Motion references | Any case, when a scene needs a specified move | Optional Motion Prompt catalog discovery, selected IDs, renderer adaptation and provenance; does not choose the edit's narrative | [`motion-references/SKILL.md`](motion-references/SKILL.md) |
 
 A cross-cutting skill layers on top of a case skill. It never replaces one.
 Mixing mechanics (loop, gain, normalisation, silence checks) stay in

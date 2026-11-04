@@ -33,6 +33,8 @@ id | source | source_in | source_out | event_time | duration | camera | audio | 
 
 Use stable IDs and versioned outputs. Never infer that an old file is current from a filename such as `final.mp4`.
 
+When a scene needs a named motion, camera move, or visual effect, the editor may use the optional [Motion Prompt reference](references/motion-prompt.md). Accept explicit element IDs and pasted gallery picks without silently substituting other effects. Record the selected ID, intended use, source revision, and adaptation in the existing `treatment`/`notes` fields of that scene's storyboard row. Do not create a parallel effects manifest or make the catalog mandatory for ordinary cuts.
+
 ## 4. Align multiple sources
 
 When sources show the same event, create one logical event timeline before selecting shots. Use observable anchors such as a HUD clock, slate, score change, waveform, or verified marker. Record the mapping and validate it at an early, middle, and late point.
@@ -51,6 +53,8 @@ For continuous music, use a verified non-silent loop source, normalize it before
 
 Normalize clips first, create reviewable segments, assemble the timeline, mix audio, and encode the deliverable. Keep dimensions, frame rate, SAR, timestamps, pixel format, audio sample rate, and channels explicit. Use the tools available in the environment; `ffmpeg`/`ffprobe` are common options, not mandatory agent dependencies.
 
+When using a Motion Prompt reference, first read the element spec and any required pack kit; adapt it to the project's existing renderer or translate it into a model prompt. A reference is not a ready-to-drop-in video clip. See [references/motion-prompt.md](references/motion-prompt.md) for porting and provenance rules.
+
 Write to a temporary or versioned output, then promote it only after validation. Never claim success based only on a command exit message from a stale or uninspected file.
 
 ## 7. Validate
@@ -61,7 +65,8 @@ Check both content and technology:
 - verify event order, source alignment, forbidden material, decisive endings, crops, subtitles, and logos;
 - inspect duration, streams, codec, dimensions, frame rate, pixel format, sample rate, and channels with the available media inspector;
 - listen for gaps, clipping, unwanted voices, sponsor audio, and BGM discontinuities;
-- play the result in at least one target player or preview surface.
+- play the result in at least one target player or preview surface;
+- for any selected motion reference, check its entrance, hold, exit/loop and scene boundaries against the referenced spec (see [quality gates](references/quality-gates.md)).
 
 If a gate fails, fix the manifest or source mapping and render again. Do not hand-patch a stale export.
 
